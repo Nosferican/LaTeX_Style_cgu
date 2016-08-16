@@ -1,0 +1,50 @@
+%%%%%
+%% Compile using LuaLaTeX
+%% This document is in version: `DRAFT`.
+%%%%%
+
+\documentclass{cgu}
+
+%%%%% General Comments
+%%% Citations
+%% For adding your references, add a `references.bib`
+%% Include url only if doi is not provided
+%% For textual citation use \citet{id} = author (year)
+%% For parental citation use \citep{id} = (author year)
+%%% Images
+%% For adding your images, put the files as img/filename.extension
+%%% Tables
+%% Tables should be included as TableX where X is the number.
+%%%%%
+
+\title{Title}
+\author{Author\thanks{Affiliation (email: \href{mailto:name@institution.edu}{name@institution.edu})}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This is a textual citation \citet{Einstein1905}.
+\end{abstract}
+
+\begin{table}[!hbpt]
+    \caption{Table Captions Above Table}
+    \include{Table1}
+    \label{tab:Table1}
+\end{table}
+
+\begin{figure}[!hbpt]
+    {\centering
+    \includegraphics{universe}
+    }\\
+    \raggedright
+    \footnotesize
+    \emph{\\Source:} Here I tell you where I got this.\\
+    \emph{Explanation:} This is where I talk about it briefly.
+    \caption{Figures Caption Below Figure}
+    \label{fig:Figure1}
+\end{figure}
+
+\printbibliography
+\end{document}
