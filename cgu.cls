@@ -11,7 +11,7 @@
 %%%%%
 %% Populates defaults from the `article` class.
 %%%%%
-\LoadClass{article}
+\LoadClass[12pt]{article}
 
 %%%%%
 %% Requires certain packages.
@@ -25,9 +25,18 @@
 %%%
 %% Fonts and Typewriting
 %%%
-\RequirePackage{fontspec}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{unicode-math}
+\setmathfont{latinmodern-math.otf}
 \RequirePackage{lmodern}
 \RequirePackage{microtype}
+
+%%%
+%% Paragraph Formating
+%%%
+\RequirePackage{setspace}
+\RequirePackage{indentfirst}
 
 %%%
 %% Document size and margins
@@ -43,7 +52,6 @@
 %%%
 %% Enhances the math environment
 %%%
-\RequirePackage{amsmath}
 
 %%%
 %% Enables including images
@@ -69,11 +77,11 @@
 \hypersetup{
     colorlinks = true,
     linkcolor  = black,
-    filecolor  = black,
+    filecolor  = black,      
     urlcolor   = black,
     citecolor  = black
     }
-
+ 
 \urlstyle{same}
 
 %%%

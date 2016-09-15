@@ -1,20 +1,18 @@
 %%%%%
 %% Compile using LuaLaTeX
-%% This document is in version: `DRAFT`.
+%% This document is in version: `DRAFT'.
 %%%%%
 
 \documentclass{cgu}
 
 %%%%% General Comments
 %%% Citations
-%% For adding your references, add a `references.bib`
+%% For adding your references, add a `references.bib'
 %% Include url only if doi is not provided
 %% For textual citation use \citet{id} = author (year)
 %% For parental citation use \citep{id} = (author year)
 %%% Images
 %% For adding your images, put the files as img/filename.extension
-%%% Tables
-%% Tables should be included as TableX where X is the number.
 %%%%%
 
 \title{Title}
@@ -27,6 +25,11 @@
 \begin{abstract}
 This is a textual citation \citet{Einstein1905}.
 \end{abstract}
+
+%%%
+%% Line spacing to 1.5
+\onehalfspacing
+%%%
 
 \begin{table}[!hbpt]
     \caption{Table Captions Above Table}
@@ -46,5 +49,9 @@ This is a textual citation \citet{Einstein1905}.
     \label{fig:Figure1}
 \end{figure}
 
+%%%
+%% Single-spaced
+\singlespacing
+%%%
 \printbibliography
 \end{document}
