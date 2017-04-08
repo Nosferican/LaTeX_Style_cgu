@@ -25,18 +25,18 @@
 %%%
 %% Fonts and Typewriting
 %%%
-\RequirePackage{amssymb}
-\RequirePackage{amsthm}
+\RequirePackage{mathtools}
 \RequirePackage{unicode-math}
-\setmathfont{latinmodern-math.otf}
 \RequirePackage{lmodern}
 \RequirePackage{microtype}
+\RequirePackage{nicefrac}
 
 %%%
 %% Paragraph Formating
 %%%
 \RequirePackage{setspace}
 \RequirePackage{indentfirst}
+\RequirePackage{hanging}
 
 %%%
 %% Document size and margins
@@ -50,8 +50,14 @@
 \RequirePackage{csquotes}
 
 %%%
-%% Enhances the math environment
+%% Author Block
 %%%
+\RequirePackage{authblk}
+
+%%%
+%% Quotes
+%%%
+\RequirePackage{epigraph}
 
 %%%
 %% Enables including images
@@ -62,7 +68,7 @@
 %%%
 %% Enhances Figures and Tables environments
 %%%
-\RequirePackage{caption}
+\RequirePackage[hypcap=true]{caption}
 \captionsetup[table]{labelfont=bf,textfont=it}
 \captionsetup[figure]{labelfont=bf,textfont=it}
 \RequirePackage{booktabs, multirow, array, floatrow, cellspace, tabularx}
@@ -73,26 +79,33 @@
 %%%
 %% Enables hyperlinks
 %%%
+\RequirePackage{varioref}
 \RequirePackage{hyperref}
 \hypersetup{
-    colorlinks = true,
-    linkcolor  = black,
-    filecolor  = black,      
-    urlcolor   = black,
-    citecolor  = black
-    }
- 
+	colorlinks = true,
+	linkcolor  = black,
+	filecolor  = black,      
+	urlcolor   = black,
+	citecolor  = black
+}
+
 \urlstyle{same}
+
+%%%
+%% Cross References
+%%%
+\RequirePackage{cleveref}
 
 %%%
 %% Citation Manager
 %%%
 \RequirePackage[
-    authordate,
-    natbib,
-    backend      = biber,
-    sorting      = nyt,
-    backref      = true,
-    backrefstyle = three+
-    ]{biblatex-chicago}
+	authordate,
+	natbib,
+	backend		 = biber,
+	sorting		 = nyt,
+	backref      = true,
+	backrefstyle = three+
+]{biblatex-chicago}
+
 \addbibresource{references.bib}

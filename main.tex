@@ -1,5 +1,6 @@
 %%%%%
 %% Compile using LuaLaTeX
+%% Use Biber as Bibliography Tool
 %% This document is in version: `DRAFT'.
 %%%%%
 
@@ -15,15 +16,24 @@
 %% For adding your images, put the files as img/filename.extension
 %%%%%
 
+\hypersetup{
+	pdfauthor={},
+	pdftitle={},
+	pdfcreator={}
+}
+
 \title{Title}
-\author{Author\thanks{Affiliation (email: \href{mailto:name@institution.edu}{name@institution.edu})}}
+\author{Full Name\thanks{
+		Affiliation: Institution\\Corresponding Author: \href{mailto:local-part@domain.name}{local-part@domain.name}
+	}
+}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-This is a textual citation \citet{Einstein1905}.
+This is a textual citation \citet{Einstein1905}. This is the same, but parental \citep{Einstein1905}.
 \end{abstract}
 
 %%%
@@ -50,8 +60,9 @@ This is a textual citation \citet{Einstein1905}.
 \end{figure}
 
 %%%
-%% Single-spaced
 \singlespacing
 %%%
+
 \printbibliography
+
 \end{document}
