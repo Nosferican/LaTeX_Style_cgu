@@ -11,9 +11,9 @@ A neat LuaLaTeX class and template for producing manuscripts, dissertations, and
 - The easiest way to start using it is to use [ShareLaTeX](https://www.sharelatex.com?r=1f0ce828&rm=d&rs=b) and upload these files to your project (you may use the link and register and account or login to yours, it is free).
 
 ## Features
-- It uses LuaLaTeX as the compiler and BibLaTeX as the reference manager.
+- It uses LuaLaTeX as the compiler and Biber as the bibliography tool.
 - It uses A4 paper size with margins 2.5cm and English language support (I dislike American obsolete punctuation rules).
-- It uses Latin Modern 12pt as the default font and font size for text and math.
+- It uses Latin Modern 12pt as the default font and font size for text and unicode-math default font for math.
 - The line spacing is 1.5 for the body of the document and single spaced for the references.
 - The citation style that uses is Chicago Author-Date
   - It allows for textual and parental citations,
